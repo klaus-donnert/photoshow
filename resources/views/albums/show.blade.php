@@ -17,8 +17,10 @@
                         <div class='medium-4 columns end'>
                             <a href="/photos/{{$photo->id}}">
                                 <img class="thumbnail" width="100" src="{{URL::to('/')}}/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
-                                <img src="{!! url('/storage/photos/'.$photo->album_id.'/'.$photo->photo) !!}">
+
                             </a>
+                            <br>
+                            <img src="{!! url('/storage/photos/'.$photo->album_id.'/'.$photo->photo) !!}">
                             <br>
                             <h4>{{$photo->title}}</h4>
                             @else
