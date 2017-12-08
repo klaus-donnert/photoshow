@@ -20,7 +20,7 @@
 
                             </a>
                             <br>
-                            <img src="{!! url('/storage/photos/'.$photo->album_id.'/'.$photo->photo) !!}">
+                            <img src="{!! storage_path('photos/'.$photo->album_id.'/'.$photo->photo) !!}">
                             <br>
                             <h4>{{$photo->title}}</h4>
                             @else
