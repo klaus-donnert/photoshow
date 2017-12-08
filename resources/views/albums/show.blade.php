@@ -20,7 +20,7 @@
 
                             </a>
                             <br>
-                            <img src="{!! URL::to('photos/'.$photo->album_id.'/'.$photo->photo) !!}" alt="test image">
+                            <img src="{{ Storage::url('photos/'.$photo->album_id.'/'.$photo->photo) }}" alt="test image">
                             <br>
                             <h4>{{$photo->title}}</h4>
                             @else
