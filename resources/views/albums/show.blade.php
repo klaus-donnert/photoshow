@@ -20,8 +20,7 @@
 
                             </a>
                             <br>
-                            <img src="{{ Storage::url('photos/'.$photo->album_id.'/'.$photo->photo) }}" alt="test image">
-                            <br>
+                            
                             <h4>{{$photo->title}}</h4>
                             @else
                                 <div class='medium-4 columns'>
