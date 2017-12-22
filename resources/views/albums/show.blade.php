@@ -20,7 +20,7 @@
 
                             </a>
                             <br>
-                            
+
                             <h4>{{$photo->title}}</h4>
                             @else
                                 <div class='medium-4 columns'>
