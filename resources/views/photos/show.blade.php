@@ -5,7 +5,7 @@
     <p>{{$photo->description}}</p>
     <a href="/albums/{{$photo->album_id}}">Back</a>
     <hr>
-    <img src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+    <img class="boxshadow" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
     <br>
     <br>
     {!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' =>'post']) !!}

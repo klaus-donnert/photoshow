@@ -16,7 +16,10 @@
                     @if($i == $colcount)
                         <div class='medium-4 columns end'>
                             <a href="/photos/{{$photo->id}}">
-                                <img class="thumbnail" width="100" src="{{URL::to('/')}}/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+
+                                    <img class="thumbnail boxshadow-sm" width="100"
+                                         src="{{URL::to('/')}}/storage/photos/{{$photo->album_id}}/{{$photo->photo}}"
+                                         alt="{{$photo->title}}">
 
                             </a>
                             <br>
@@ -25,13 +28,16 @@
                             @else
                                 <div class='medium-4 columns'>
                                     <a href="/photos/{{$photo->id}}">
-                                        <img class="thumbnail" width="100" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+                                        <img class="thumbnail boxshadow-sm" width="100"
+                                             src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}"
+                                             alt="{{$photo->title}}">
                                     </a>
                                     <br>
                                     <h4>{{$photo->title}}</h4>
                                     @endif
                                     @if($i % 3 == 0)
-                                </div></div><div class="row text-center">
+                                </div></div>
+                        <div class="row text-center">
                             @else
                         </div>
                     @endif

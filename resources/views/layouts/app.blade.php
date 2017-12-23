@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photoshow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.css">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
 @include('inc.topbar')
 <div class="row">
+    <br>
     @include('inc.messages')
     @yield('content')
 </div>

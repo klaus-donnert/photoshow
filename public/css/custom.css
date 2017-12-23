@@ -1,0 +1,17 @@
+.boxshadow {
+    position: relative;
+    -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+.boxshadow-sm {
+    position: relative;
+    -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    padding: 3px;
+    background: white;
+}
